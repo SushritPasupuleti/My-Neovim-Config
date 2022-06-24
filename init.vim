@@ -72,6 +72,10 @@ Plug 'windwp/nvim-autopairs'
 
 Plug 'ellisonleao/glow.nvim', {'branch': 'main'}
 
+" Sessions
+Plug 'rmagatti/auto-session'
+Plug 'rmagatti/session-lens'
+
 set encoding=UTF-8
 
 call plug#end()
@@ -101,6 +105,7 @@ let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 "telescope
 " Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fc <cmd>Telescope find_files find_command=rg,--ignore,--hidden,--files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
