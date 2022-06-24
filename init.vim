@@ -70,6 +70,8 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'folke/which-key.nvim'
 Plug 'windwp/nvim-autopairs'
 
+Plug 'ellisonleao/glow.nvim', {'branch': 'main'}
+
 set encoding=UTF-8
 
 call plug#end()
@@ -102,6 +104,9 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+" GLow Preview
+noremap <leader>p :Glow<CR>
 
 " Load Lua Configs
 :lua require('main_config')
