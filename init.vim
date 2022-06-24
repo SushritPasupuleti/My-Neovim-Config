@@ -55,6 +55,18 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 
+" Bufferline for tabs
+Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
+" Plug 'ryanoasis/vim-devicons' Icons without colours
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'lewis6991/gitsigns.nvim'
+
+" Telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
 set encoding=UTF-8
 
 call plug#end()
@@ -77,7 +89,16 @@ au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
 " let g:airline_theme='onedark'
 
 let g:airline_theme='powerlineish'
+let g:airline#extensions#tabline#enabled = 1
 let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourself. default: 0
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+
+"telescope
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " Load Lua Configs
 :lua require('main_config')
