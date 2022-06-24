@@ -76,6 +76,8 @@ Plug 'ellisonleao/glow.nvim', {'branch': 'main'}
 Plug 'rmagatti/auto-session'
 Plug 'rmagatti/session-lens'
 
+Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
+
 set encoding=UTF-8
 
 call plug#end()
@@ -110,6 +112,8 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
+nnoremap <leader>rn <cmd>Lspsaga rename<cr>
+nnoremap <leader>ca <cmd>Lspsaga code_action<cr>
 " GLow Preview
 noremap <leader>p :Glow<CR>
 
