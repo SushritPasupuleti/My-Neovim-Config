@@ -1,5 +1,6 @@
 require 'sushrit_lawliet.options'
 require 'sushrit_lawliet.lspconfig'
+require 'sushrit_lawliet.tree_sitter'
 
 require('gitsigns').setup()
 
@@ -107,8 +108,65 @@ require("scrollbar").setup({
     },
 })
 
+require("nvim-tree").setup({
+	auto_reload_on_write = true,
+	renderer = {
+        add_trailing = false,
+        group_empty = false,
+        highlight_git = false,
+        full_name = false,
+        highlight_opened_files = "none",
+        root_folder_modifier = ":~",
+        indent_markers = {
+          enable = false,
+          icons = {
+            corner = "└ ",
+            edge = "│ ",
+            item = "│ ",
+            none = "  ",
+          },
+        },
+        icons = {
+          webdev_colors = true,
+          git_placement = "before",
+          padding = " ",
+          symlink_arrow = " ➛ ",
+          show = {
+            file = true,
+            folder = true,
+            folder_arrow = true,
+            git = true,
+          },
+          glyphs = {
+            default = "",
+            symlink = "",
+            folder = {
+              arrow_closed = "",
+              arrow_open = "",
+              default = "",
+              open = "",
+              empty = "",
+              empty_open = "",
+              symlink = "",
+              symlink_open = "",
+            },
+            git = {
+              unstaged = "✗",
+              staged = "✓",
+              unmerged = "",
+              renamed = "➜",
+              untracked = "★",
+              deleted = "",
+              ignored = "◌",
+            },
+          },
+        },
+        special_files = { "Cargo.toml", "Makefile", "README.md", "readme.md" },
+      },
+})
+
 -- echom 'main_config.lua loaded'
-print('main_config.lua loaded', vim.opt.runtimepath, '~/.config/nvim/plugins/snippets')
+-- print('main_config.lua loaded', vim.opt.runtimepath, '~/.config/nvim/plugins/snippets')
 
 -- vim.opt.runtimepath = vim.opt.runtimepath + '~/.config/nvim/plugins/snippets'
 -- require('luasnip/loaders/from_vscode').lazy_load()

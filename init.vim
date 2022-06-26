@@ -23,6 +23,7 @@
 "call plug#begin()
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'https://github.com/vim-airline/vim-airline' " Status bar
 Plug 'vim-airline/vim-airline-themes' " Status bar themes
 Plug 'https://github.com/preservim/nerdtree' |
@@ -57,6 +58,7 @@ Plug 'saadparwaiz1/cmp_luasnip'
 
 " Bufferline for tabs
 Plug 'kyazdani42/nvim-web-devicons' " Recommended (for coloured icons)
+Plug 'kyazdani42/nvim-tree.lua'
 " Plug 'ryanoasis/vim-devicons' Icons without colours
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
@@ -83,8 +85,12 @@ Plug 'petertriho/nvim-scrollbar'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 
+" Plug 'matze/vim-move'
+" Plug 'https://github.com/fedepujol/move.nvim'
+
 " Snippets
 Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
+Plug 'vscodeshift/material-ui-snippets', { 'do': 'yarn install --frozen-lockfile && yarn build' }
 
 set encoding=UTF-8
 
@@ -125,6 +131,11 @@ nnoremap <leader>ca <cmd>Lspsaga code_action<cr>
 " GLow Preview
 noremap <leader>p :Glow<CR>
 
+" let g:move_key_modifier = 'S'
+" let g:move_key_modifier_visualmode = 'C'
+
+" let g:glow_use_pager = v:true
+
 " Load Lua Configs
 :lua require('main_config')
 
@@ -157,6 +168,15 @@ nmap        s   <Plug>(vsnip-select-text)
 xmap        s   <Plug>(vsnip-select-text)
 nmap        S   <Plug>(vsnip-cut-text)
 xmap        S   <Plug>(vsnip-cut-text)
+
+" let g:move_key_modifier = 'C'
+" let g:move_key_modifier_visualmode = 'S'
+
+" Move 1 more lines up or down in normal and visual selection modes.
+nnoremap K :m .-2<CR>==
+nnoremap J :m .+1<CR>==
+vnoremap K :m '<-2<CR>gv=gv
+vnoremap J :m '>+1<CR>gv=gv
 
 lua <<EOF
   -- Setup nvim-cmp.
