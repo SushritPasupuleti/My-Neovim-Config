@@ -92,6 +92,10 @@ Plug 'hrsh7th/vim-vsnip-integ'
 Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
 Plug 'vscodeshift/material-ui-snippets', { 'do': 'yarn install --frozen-lockfile && yarn build' }
 
+Plug 'folke/lsp-colors.nvim'
+
+Plug 'folke/trouble.nvim'
+
 set encoding=UTF-8
 
 call plug#end()
