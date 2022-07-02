@@ -96,6 +96,8 @@ Plug 'folke/lsp-colors.nvim'
 
 Plug 'folke/trouble.nvim'
 
+Plug 'lalitmee/browse.nvim' " Browse things
+
 set encoding=UTF-8
 
 call plug#end()
