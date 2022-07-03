@@ -102,6 +102,8 @@ Plug 'numToStr/Comment.nvim' " Comment things
 " Plug 'ahmedkhalf/project.nvim' "Project Manager
 Plug 'gennaro-tedesco/nvim-jqx'
 
+Plug 'goolord/alpha-nvim' "Dashboard
+
 set encoding=UTF-8
 
 call plug#end()
