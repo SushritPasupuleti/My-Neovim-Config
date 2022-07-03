@@ -36,7 +36,7 @@ Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 " Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
-Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
+" Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
 Plug 'https://github.com/yamatsum/nvim-cursorline' " For line/keyword highlighting
 " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'tpope/vim-fugitive'
@@ -97,6 +97,10 @@ Plug 'folke/lsp-colors.nvim'
 Plug 'folke/trouble.nvim'
 
 Plug 'lalitmee/browse.nvim' " Browse things
+Plug 'numToStr/Comment.nvim' " Comment things
+" Plug 'karb94/neoscroll.nvim' " Smooth Scroll
+" Plug 'ahmedkhalf/project.nvim' "Project Manager
+Plug 'gennaro-tedesco/nvim-jqx'
 
 set encoding=UTF-8
 

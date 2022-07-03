@@ -3,7 +3,18 @@ require 'sushrit_lawliet.lspconfig'
 require 'sushrit_lawliet.tree_sitter'
 require 'sushrit_lawliet.browse_config'
 
+-- require('project_nvim').setup()
+--
+-- local project_nvim = require("project_nvim")
+-- local recent_projects = project_nvim.get_recent_projects()
+--
+-- print(vim.inspect(recent_projects))
+
 require('gitsigns').setup()
+
+require('Comment').setup()
+
+-- require('neoscroll').setup()
 
 require("which-key").setup {
 	-- your configuration comes here
