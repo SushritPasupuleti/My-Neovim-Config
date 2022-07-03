@@ -188,3 +188,13 @@ require("nvim-tree").setup({
 -- require('luasnip/loaders/from_vscode').lazy_load()
 
 require('luasnip/loaders/from_vscode').lazy_load({path = '~/.config/nvim/plugins/snippets'})
+
+-- vim.opt.list = true
+-- vim.opt.listchars:append("space:⋅")
+-- vim.opt.listchars:append("eol:↴")
+
+require("indent_blankline").setup {
+    space_char_blankline = " ",
+    show_current_context = true,
+    show_current_context_start = true,
+}
