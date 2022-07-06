@@ -3,6 +3,7 @@ require 'sushrit_lawliet.lspconfig'
 require 'sushrit_lawliet.tree_sitter'
 require 'sushrit_lawliet.browse_config'
 require 'sushrit_lawliet.dashboard'
+-- require 'sushrit_lawliet.nav-config'
 
 -- Start Dashboard
 vim.cmd("Alpha")

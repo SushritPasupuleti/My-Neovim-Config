@@ -103,6 +103,8 @@ Plug 'numToStr/Comment.nvim' " Comment things
 Plug 'gennaro-tedesco/nvim-jqx'
 
 Plug 'goolord/alpha-nvim' "Dashboard
+" Plug 'nvim-neo-tree/neo-tree.nvim'" Neo Tree
+" Plug 'MunifTanjim/nui.nvim' "NUI
 
 set encoding=UTF-8
 
@@ -125,7 +127,7 @@ au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
 :colorscheme onedark
 " let g:airline_theme='onedark'
 
-let g:airline_theme='deus'"'powerlineish'
+let g:airline_theme='ayu_dark'"'deus'"'powerlineish'
 let g:airline#extensions#tabline#enabled = 1
 let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourself. default: 0
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
@@ -140,8 +142,15 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
+" LSPSaga
 nnoremap <leader>rn <cmd>Lspsaga rename<cr>
 nnoremap <leader>ca <cmd>Lspsaga code_action<cr>
+"nnoremap <silent> ge <cmd>lua require('lspsaga.hover').render_hover_doc()<CR>
+nnoremap <silent><leader>k :Lspsaga hover_doc<CR>
+nnoremap <silent>gs :Lspsaga signature_help<CR>
+nnoremap <silent> gh :Lspsaga lsp_finder<CR>
+" nnoremap <silent><space>e :Lspsaga show_line_diagnostics<CR>
+
 " GLow Preview
 noremap <leader>p :Glow<CR>
 

@@ -74,13 +74,25 @@ Use: <kbd>"</kbd> <kbd>+ </kbd> <kbd> y</kbd> and <kbd>"</kbd> <kbd>+ </kbd> <kb
 
 - <kbd>,</kbd> <kbd>f</kbd> <kbd>h</kbd> Telescope help/tags
 
-### Misc
-
-- <kbd>,</kbd> <kbd>p</kbd> Activate Glow (Markdown Previewer)
+### LSP
 
 - <kbd>,</kbd> <kbd>r</kbd> <kbd>n</kbd> Renane w/ GUI.
 
 - <kbd>,</kbd> <kbd>c</kbd> <kbd>a</kbd> Code Action w/ GUI.
+
+- <kbd>,</kbd> <kbd>k</kbd> Hover Docs.
+
+- <kbd>g</kbd> <kbd>s</kbd> Signature.
+
+- <kbd>g</kbd> <kbd>h</kbd> LSP Finder.
+
+#### Diagnostics
+
+- <kbd>space</kbd> <kbd>e</kbd> Open Diagnostics.
+
+### Misc
+
+- <kbd>,</kbd> <kbd>p</kbd> Activate Glow (Markdown Previewer)
 
 ## Snippets
 
