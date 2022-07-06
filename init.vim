@@ -125,11 +125,12 @@ au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
 :colorscheme onedark
 " let g:airline_theme='onedark'
 
-let g:airline_theme='powerlineish'
+let g:airline_theme='deus'"'powerlineish'
 let g:airline#extensions#tabline#enabled = 1
 let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourself. default: 0
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline#extensions#whitespace#enabled = 0
+let g:airline_powerline_fonts = 1
 
 "telescope
 " Find files using Telescope command-line sugar.

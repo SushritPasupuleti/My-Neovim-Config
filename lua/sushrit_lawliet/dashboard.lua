@@ -132,7 +132,11 @@ dashboard.section.buttons.val = {
     dashboard.button( "s", "  > Settings" , ":e $MYVIMRC | :cd %:p:h | split . | wincmd k | pwd<CR>"),
     dashboard.button( "q", "  > Quit NVIM", ":qa<CR>"),
 }
-
+--
+-- dashboard.section.footer.opts.hl = "AlphaFooter"
+-- dashboard.section.header.opts.hl = "AlphaHeader"
+-- dashboard.section.buttons.opts.hl = "MoreMsg"
+--
 -- Send config to alpha
 alpha.setup(dashboard.opts)
 
