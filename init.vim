@@ -111,6 +111,8 @@ Plug 'goolord/alpha-nvim' "Dashboard
 Plug 'mbbill/undotree'
 Plug 'tanvirtin/vgit.nvim' "Visual Git
 
+Plug 'folke/zen-mode.nvim'
+
 set encoding=UTF-8
 
 call plug#end()
@@ -162,6 +164,8 @@ noremap <leader>p :Glow<CR>
 " undotree
 nnoremap <leader>z :UndotreeToggle<CR>
 
+" Zen Mode
+noremap <space>z :ZenMode<CR>
 " let g:move_key_modifier = 'S'
 " let g:move_key_modifier_visualmode = 'C'
 

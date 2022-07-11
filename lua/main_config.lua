@@ -21,6 +21,11 @@ require('gitsigns').setup()
 
 require('Comment').setup()
 
+require("zen-mode").setup {
+	window = {
+		width = .95 -- width will be 85% of the editor width
+	}
+}
 -- require('neoscroll').setup()
 
 require("which-key").setup {

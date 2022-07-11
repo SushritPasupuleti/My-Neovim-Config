@@ -98,6 +98,8 @@ Use: <kbd>"</kbd> <kbd>+ </kbd> <kbd> y</kbd> and <kbd>"</kbd> <kbd>+ </kbd> <kb
 
 - <kbd>,</kbd> <kbd>p</kbd> Activate Glow (Markdown Previewer)
 
+- <kbd>space</kbd> <kbd>z</kbd> Zen Mode Toggle.
+
 ### Multiple Cursors
 
 - <kbd>Ctrl</kbd> <kbd>n</kbd> Select Word under cursor.
