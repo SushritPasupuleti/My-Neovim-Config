@@ -109,6 +109,7 @@ Plug 'goolord/alpha-nvim' "Dashboard
 " Plug 'nvim-neo-tree/neo-tree.nvim'" Neo Tree
 " Plug 'MunifTanjim/nui.nvim' "NUI
 Plug 'mbbill/undotree'
+Plug 'tanvirtin/vgit.nvim' "Visual Git
 
 set encoding=UTF-8
 

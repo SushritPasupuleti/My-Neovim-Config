@@ -15,6 +15,7 @@ vim.cmd("Alpha")
 -- local recent_projects = project_nvim.get_recent_projects()
 --
 -- print(vim.inspect(recent_projects))
+require('vgit').setup()
 
 require('gitsigns').setup()
 
