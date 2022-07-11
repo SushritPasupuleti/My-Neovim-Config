@@ -108,6 +108,7 @@ Plug 'gennaro-tedesco/nvim-jqx'
 Plug 'goolord/alpha-nvim' "Dashboard
 " Plug 'nvim-neo-tree/neo-tree.nvim'" Neo Tree
 " Plug 'MunifTanjim/nui.nvim' "NUI
+Plug 'mbbill/undotree'
 
 set encoding=UTF-8
 
@@ -156,6 +157,9 @@ nnoremap <silent> gh :Lspsaga lsp_finder<CR>
 
 " GLow Preview
 noremap <leader>p :Glow<CR>
+
+" undotree
+nnoremap <leader>z :UndotreeToggle<CR>
 
 " let g:move_key_modifier = 'S'
 " let g:move_key_modifier_visualmode = 'C'

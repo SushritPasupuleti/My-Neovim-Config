@@ -20,6 +20,10 @@ Key:
 
 Use `:u` and `:r` respectively. Or use <kbd>u</kbd> and <kbd>r</kbd> from `command` mode.
 
+#### Undo Tree
+
+<kbd>,</kbd> <kbd>z</kbd> Toggle Undo Tree.
+
 ### Search and Highlight
 
 In `command` mode. Press <kbd>/</kbd> to enter search. Now type a regex pattern you would like to search.
