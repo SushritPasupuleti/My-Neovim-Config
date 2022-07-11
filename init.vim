@@ -1,3 +1,6 @@
+" ----------------------------------------------------------------------------
+" Will refactor this into Lua in the near future
+" ----------------------------------------------------------------------------
 :set number
 " I don't like relativenumber personally.
 " :set relativenumber
@@ -38,7 +41,7 @@ Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
 " Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
 Plug 'https://github.com/yamatsum/nvim-cursorline' " For line/keyword highlighting
-" Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'tpope/vim-fugitive'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'github/copilot.vim'

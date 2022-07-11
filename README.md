@@ -94,6 +94,23 @@ Use: <kbd>"</kbd> <kbd>+ </kbd> <kbd> y</kbd> and <kbd>"</kbd> <kbd>+ </kbd> <kb
 
 - <kbd>,</kbd> <kbd>p</kbd> Activate Glow (Markdown Previewer)
 
+### Multiple Cursors
+
+- <kbd>Ctrl</kbd> <kbd>n</kbd> Select Word under cursor.
+
+- <kbd>Ctrl</kbd> <kbd>Up/Down</kbd> Vertically create cursors.
+
+- <kbd>n</kbd> / <kbd>N</kbd> Goto Next/Previous occurence.
+
+- <kbd>[</kbd> <kbd>]</kbd> Select Next/Previous cursor.
+
+- <kbd>q</kbd> Skip current and get next occurence.
+
+- <kbd>Q</kbd> Remove current cursor.
+
+- <kbd>a</kbd> / <kbd>i</kbd> Insert mode.
+
+
 ## Snippets
 
 <details>
