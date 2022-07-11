@@ -116,6 +116,23 @@ Use: <kbd>"</kbd> <kbd>+ </kbd> <kbd> y</kbd> and <kbd>"</kbd> <kbd>+ </kbd> <kb
 
 - <kbd>a</kbd> / <kbd>i</kbd> Insert mode.
 
+## Find and Replace
+
+Uses Spectre
+
+- <kbd>,</kbd> <kbd>S</kbd> Toggles Spectre (No context).
+
+- <kbd>,</kbd> <kbd>s</kbd> <kbd>w</kbd> Toggles Spectre with word under cursor as context.
+
+Once you've made entries, navigate to the line and use: 
+
+- <kbd>,</kbd> <kbd>r</kbd> <kbd>c</kbd> Replace in current line.
+
+- <kbd>,</kbd> <kbd>R</kbd> Replace all.
+
+- <kbd>,</kbd> <kbd>Enter</kbd> Go to File.
+
+- <kbd>,</kbd> <kbd>o</kbd> Show options.
 
 ## Snippets
 

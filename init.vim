@@ -112,6 +112,7 @@ Plug 'mbbill/undotree'
 Plug 'tanvirtin/vgit.nvim' "Visual Git
 
 Plug 'folke/zen-mode.nvim'
+Plug 'windwp/nvim-spectre'
 
 set encoding=UTF-8
 
@@ -158,6 +159,10 @@ nnoremap <silent>gs :Lspsaga signature_help<CR>
 nnoremap <silent> gh :Lspsaga lsp_finder<CR>
 " nnoremap <silent><space>e :Lspsaga show_line_diagnostics<CR>
 
+" Spectre for Find and Replace
+nnoremap <leader>S <cmd>lua require('spectre').open()<CR>
+nnoremap <leader>sw <cmd>lua require('spectre').open_visual({select_word=true})<CR>
+vnoremap <leader>s <esc>:lua require('spectre').open_visual()<CR>
 " GLow Preview
 noremap <leader>p :Glow<CR>
 
