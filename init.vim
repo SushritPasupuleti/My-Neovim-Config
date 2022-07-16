@@ -113,6 +113,12 @@ Plug 'tanvirtin/vgit.nvim' "Visual Git
 
 Plug 'folke/zen-mode.nvim'
 Plug 'windwp/nvim-spectre'
+Plug 'rebelot/kanagawa.nvim'
+
+"====Color Schemes====
+Plug 'cpea2506/one_monokai.nvim'
+Plug 'tiagovla/tokyodark.nvim'
+Plug 'olimorris/onedarkpro.nvim'
 
 set encoding=UTF-8
 
