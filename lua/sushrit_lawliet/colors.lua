@@ -1,21 +1,3 @@
--- require("one_monokai").setup{
--- 	    transparent = false,
---     colors = {},
---     themes = function(colors)
---         return {}
---     end,
--- }
--- vim.g.tokyodark_transparent_background = true
--- vim.g.tokyodark_enable_italic_comment = true
--- vim.g.tokyodark_enable_italic = true
--- vim.g.tokyodark_color_gamma = "1.0"
--- vim.cmd("colorscheme tokyodark")
--- vim.cmd("colorscheme kanagawa")
-
-
-
--- vim.cmd("colorscheme onedark_vivid")
--- vim.cmd("colorscheme onedarkpro")
 local M = {}
 
 -- Default options for the theme

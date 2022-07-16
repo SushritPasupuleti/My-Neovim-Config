@@ -71,6 +71,7 @@ Plug 'lewis6991/gitsigns.nvim'
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-ui-select.nvim'
 
 Plug 'folke/which-key.nvim'
 Plug 'windwp/nvim-autopairs'
@@ -99,7 +100,6 @@ Plug 'folke/lsp-colors.nvim'
 
 Plug 'folke/trouble.nvim'
 
-Plug 'lalitmee/browse.nvim' " Browse things
 Plug 'numToStr/Comment.nvim' " Comment things
 " Plug 'karb94/neoscroll.nvim' " Smooth Scroll
 " Plug 'ahmedkhalf/project.nvim' "Project Manager
@@ -113,9 +113,11 @@ Plug 'tanvirtin/vgit.nvim' "Visual Git
 
 Plug 'folke/zen-mode.nvim'
 Plug 'windwp/nvim-spectre'
-Plug 'rebelot/kanagawa.nvim'
+Plug 'axieax/urlview.nvim'
+Plug 'lalitmee/browse.nvim' " Browse things
 
 "====Color Schemes====
+Plug 'rebelot/kanagawa.nvim'
 Plug 'cpea2506/one_monokai.nvim'
 Plug 'tiagovla/tokyodark.nvim'
 Plug 'olimorris/onedarkpro.nvim'
@@ -155,6 +157,7 @@ nnoremap <leader>fc <cmd>Telescope find_files find_command=rg,--ignore,--hidden,
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>fu <cmd>Telescope urlview theme=dropdown<cr>
 
 " LSPSaga
 nnoremap <leader>rn <cmd>Lspsaga rename<cr>

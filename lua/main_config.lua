@@ -5,6 +5,8 @@ require 'sushrit_lawliet.browse_config'
 require 'sushrit_lawliet.dashboard'
 require 'sushrit_lawliet.snippets'
 require 'sushrit_lawliet.colors'
+require 'sushrit_lawliet.telescope'
+
 -- require 'sushrit_lawliet.nav-config'
 
 -- Start Dashboard
