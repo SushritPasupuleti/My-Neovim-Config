@@ -82,6 +82,8 @@ Use: <kbd>"</kbd> <kbd>+ </kbd> <kbd> y</kbd> and <kbd>"</kbd> <kbd>+ </kbd> <kb
 
 - <kbd>,</kbd> <kbd>f</kbd> <kbd>h</kbd> Telescope help/tags
 
+- <kbd>,</kbd> <kbd>f</kbd> <kbd>u</kbd> Telescope URLViewer
+
 ### LSP
 
 - <kbd>,</kbd> <kbd>r</kbd> <kbd>n</kbd> Renane w/ GUI.
