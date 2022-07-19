@@ -27,20 +27,20 @@
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'https://github.com/vim-airline/vim-airline' " Status bar
+Plug 'vim-airline/vim-airline' " Status bar
 Plug 'vim-airline/vim-airline-themes' " Status bar themes
-Plug 'https://github.com/preservim/nerdtree' |
+Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin'" NerdTree
 Plug 'http://github.com/tpope/vim-surround' " Surrounding ysw)
-Plug 'https://github.com/ap/vim-css-color' " CSS Color Preview
-" Plug 'https://github.com/neoclide/coc.nvim'  " Auto Completion
-Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
-Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
-Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
-" Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
-Plug 'https://github.com/rafi/awesome-vim-colorschemes' " Retro Scheme
-" Plug 'https://github.com/tpope/vim-commentary' " For Commenting gcc & gc
-Plug 'https://github.com/yamatsum/nvim-cursorline' " For line/keyword highlighting
+Plug 'ap/vim-css-color' " CSS Color Preview
+" Plug 'neoclide/coc.nvim'  " Auto Completion
+Plug 'ryanoasis/vim-devicons' " Developer Icons
+Plug 'tc50cal/vim-terminal' " Vim Terminal
+Plug 'preservim/tagbar' " Tagbar for code navigation
+" Plug 'terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
+Plug 'rafi/awesome-vim-colorschemes' " Retro Scheme
+" Plug 'tpope/vim-commentary' " For Commenting gcc & gc
+Plug 'yamatsum/nvim-cursorline' " For line/keyword highlighting
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'tpope/vim-fugitive'
 Plug 'maxmellon/vim-jsx-pretty'
@@ -90,7 +90,7 @@ Plug 'hrsh7th/vim-vsnip'
 Plug 'hrsh7th/vim-vsnip-integ'
 
 " Plug 'matze/vim-move'
-" Plug 'https://github.com/fedepujol/move.nvim'
+" Plug 'fedepujol/move.nvim'
 
 " Snippets
 Plug 'dsznajder/vscode-es7-javascript-react-snippets', { 'do': 'yarn install --frozen-lockfile && yarn compile' }
