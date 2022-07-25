@@ -14,15 +14,37 @@ Key:
 
 ### Basics
 
+- <kbd>:</kbd> <kbd>!</kbd> To execute external commands.
+
+- <kbd>x</kbd> In *Normal* or *Visual* Mode - Delete Character under cursor.
+
+- <kbd>d</kbd> <kbd>w</kbd> To delete word under cursor.
+
+- <kbd>d</kbd> <kbd>$</kbd> Delete from current position to end of line.
+
+- <kbd>'n'</kbd> <kbd>d</kbd> <kbd>d</kbd> Delete next 'n' lines.
+
+- <kbd>r</kbd> followed by any character will replace the character under cursor.
+
+- <kbd>R</kbd> Multiple Replace.
+
+- <kbd>c</kbd> <kbd>w</kbd> Delete rest of the word and enter *Insert* mode. It accepts `$` just like delete.
+
 - <kbd><</kbd> Unindent line.
 
 - <kbd>></kbd> Indent line.
 
 - <kbd>%</kbd> Goto matching `()[]{}`.
 
+- <kbd>g</kbd> <kbd>g</kbd> First line of file.
+
+- <kbd>G</kbd> Last line of file.
+
 ### Undo/Redo
 
 Use `:u` and `:r` respectively. Or use <kbd>u</kbd> and <kbd>r</kbd> from `command` mode.
+
+Use <kbd>U</kbd> to undo all changes in line.
 
 #### Undo Tree
 
@@ -30,7 +52,9 @@ Use `:u` and `:r` respectively. Or use <kbd>u</kbd> and <kbd>r</kbd> from `comma
 
 ### Search and Highlight
 
-In `command` mode. Press <kbd>/</kbd> to enter search. Now type a regex pattern you would like to search.
+In `command` mode. Press <kbd>/</kbd> to enter search. Now type a regex pattern you would like to search. Use <kbd>?</kbd> for reverse direction search.
+
+Navigate results with <kbd>n</kbd> and <kbd>N</kbd>
 
 Clear the selections by using `:noh`.
 
@@ -44,7 +68,7 @@ To select any text, you must enter `visual` mode. Press <kbd>v</kbd> in `normal`
 
 - <kbd>y</kbd> "yank"/copy the selection.
 
-- <kbd>p</kbd> Paste the selection.
+- <kbd>p</kbd> Paste the selection. <kbd>p</kbd> will *put* any recently deleted line with <kbd>dd</kbd> if it was deleted after a *yank*. Handy Cut/Paste.
 
 - Search by using these 4 in conjuntion on the selected text: <kbd>y</kbd> <kbd>q</kbd> <kbd>/</kbd> <kbd>p</kbd>
 
