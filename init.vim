@@ -110,6 +110,7 @@ Plug 'goolord/alpha-nvim' "Dashboard
 " Plug 'MunifTanjim/nui.nvim' "NUI
 Plug 'mbbill/undotree'
 Plug 'tanvirtin/vgit.nvim' "Visual Git
+Plug 'kdheepak/lazygit.nvim'
 
 Plug 'folke/zen-mode.nvim'
 Plug 'windwp/nvim-spectre'
@@ -121,6 +122,8 @@ Plug 'rebelot/kanagawa.nvim'
 Plug 'cpea2506/one_monokai.nvim'
 Plug 'tiagovla/tokyodark.nvim'
 Plug 'olimorris/onedarkpro.nvim'
+
+Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'} " Toggle Terminal
 
 set encoding=UTF-8
 
@@ -149,6 +152,14 @@ let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourse
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline_powerline_fonts = 1
+
+" LazyGit
+
+let g:lazygit_floating_window_winblend = 0 " transparency of floating window
+let g:lazygit_floating_window_scaling_factor = 0.9 " scaling factor for floating window
+" let g:lazygit_floating_window_corner_chars = ['╭', '╮', '╰', '╯'] " customize lazygit popup window corner characters
+let g:lazygit_floating_window_use_plenary = 0 " use plenary.nvim to manage floating window if available
+let g:lazygit_use_neovim_remote = 1 " fallback to 0 if neovim-remote is not installed
 
 "telescope
 " Find files using Telescope command-line sugar.
@@ -184,6 +195,11 @@ noremap <space>z :ZenMode<CR>
 " let g:move_key_modifier_visualmode = 'C'
 
 " let g:glow_use_pager = v:true
+
+" setup mapping to call :LazyGit
+nnoremap <silent> <leader>gg :LazyGit<CR>
+nnoremap <silent> <leader>gf :LazyGitFilter<CR>
+nnoremap <silent> <leader>gc :LazyGitFilterCurrentFile<CR>
 
 " Load Lua Configs
 :lua require('main_config')
