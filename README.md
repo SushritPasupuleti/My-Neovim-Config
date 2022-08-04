@@ -164,3 +164,8 @@ Once you've made entries, navigate to the line and use:
 
 - <kbd>,</kbd> <kbd>o</kbd> Show options.
 
+## Tools
+
+- <kbd>,</kbd> <kbd>g</kbd> <kbd>g</kbd> Toggle Lazygit
+
+- <kbd>,</kbd> <kbd>g</kbd> <kbd>z</kbd> Toggle czg
