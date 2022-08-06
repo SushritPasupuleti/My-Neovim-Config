@@ -144,8 +144,8 @@ au ColorScheme * hi Normal ctermbg=none guibg=none
 au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
 
 :colorscheme onedark
-" let g:airline_theme='onedark'
 
+" let g:airline_theme='onedark'
 let g:airline_theme='ayu_dark'"'deus'"'powerlineish'
 let g:airline#extensions#tabline#enabled = 1
 let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourself. default: 0
