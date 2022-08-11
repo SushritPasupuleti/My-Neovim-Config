@@ -7,6 +7,7 @@ require 'sushrit_lawliet.snippets'
 require 'sushrit_lawliet.colors'
 require 'sushrit_lawliet.telescope'
 require 'sushrit_lawliet.toggle-term'
+require 'sushrit_lawliet.notify'
 
 -- require 'sushrit_lawliet.nav-config'
 
@@ -213,3 +214,10 @@ require("indent_blankline").setup {
 
 -- Copilot on Apple Silicon Depends on Node 17.x or lower, so install node 16 LTS and point to it here for Copilot use exclusively.
 vim.g.copilot_node_command = "/opt/homebrew/Cellar/node@16/16.16.0/bin/node"
+
+require("icon-picker").setup({ disable_legacy_commands = true })
+
+
+-- vim.keymap.set("n", "<Leader><Leader>i", "<cmd>IconPickerNormal alt_font symbols nerd_font emoji<cr>", opts)
+-- vim.keymap.set("n", "<Leader><Leader>y", "<cmd>IconPickerYank alt_font symbols nerd_font emoji<cr>", opts) --> Yank the selected icon into register
+vim.keymap.set("n", "<Leader>e", "<cmd>IconPickerInsert emoji<cr>", opts)

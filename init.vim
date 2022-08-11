@@ -45,7 +45,6 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'tpope/vim-fugitive'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'github/copilot.vim'
-Plug 'neovim/nvim-lspconfig'
 
 " For nvim autocomplete
 Plug 'neovim/nvim-lspconfig'
@@ -124,6 +123,9 @@ Plug 'tiagovla/tokyodark.nvim'
 Plug 'olimorris/onedarkpro.nvim'
 
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'} " Toggle Terminal
+Plug 'rcarriga/nvim-notify' " Notification Manager
+Plug 'stevearc/dressing.nvim'
+Plug 'ziontee113/icon-picker.nvim' " Icon Picker
 
 set encoding=UTF-8
 

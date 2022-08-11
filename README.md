@@ -169,3 +169,6 @@ Once you've made entries, navigate to the line and use:
 - <kbd>,</kbd> <kbd>g</kbd> <kbd>g</kbd> Toggle Lazygit
 
 - <kbd>,</kbd> <kbd>g</kbd> <kbd>z</kbd> Toggle czg
+
+- <kbd>,</kbd> <kbd>e</kbd> Emoji Picker 🚀
+
