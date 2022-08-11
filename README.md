@@ -120,6 +120,10 @@ Use: <kbd>"</kbd> <kbd>+ </kbd> <kbd> y</kbd> and <kbd>"</kbd> <kbd>+ </kbd> <kb
 
 - <kbd>g</kbd> <kbd>h</kbd> LSP Finder.
 
+- <kbd>[</kbd> <kbd>e</kbd> Previous Diagnostics
+
+- <kbd>]</kbd> <kbd>e</kbd> Next Diagnostics
+
 #### Diagnostics
 
 - <kbd>space</kbd> <kbd>e</kbd> Open Diagnostics.

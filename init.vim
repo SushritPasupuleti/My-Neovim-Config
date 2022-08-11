@@ -127,6 +127,11 @@ Plug 'rcarriga/nvim-notify' " Notification Manager
 Plug 'stevearc/dressing.nvim'
 Plug 'ziontee113/icon-picker.nvim' " Icon Picker
 
+"====LSP Config====
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'onsails/lspkind.nvim'
+
 set encoding=UTF-8
 
 call plug#end()
@@ -173,12 +178,12 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>fu <cmd>Telescope urlview theme=dropdown<cr>
 
 " LSPSaga
-nnoremap <leader>rn <cmd>Lspsaga rename<cr>
-nnoremap <leader>ca <cmd>Lspsaga code_action<cr>
+" nnoremap <leader>rn <cmd>Lspsaga rename<cr>
+" nnoremap <leader>ca <cmd>Lspsaga code_action<cr>
 "nnoremap <silent> ge <cmd>lua require('lspsaga.hover').render_hover_doc()<CR>
-nnoremap <silent><leader>k :Lspsaga hover_doc<CR>
-nnoremap <silent>gs :Lspsaga signature_help<CR>
-nnoremap <silent> gh :Lspsaga lsp_finder<CR>
+" nnoremap <silent><leader>k :Lspsaga hover_doc<CR>
+" nnoremap <silent>gs :Lspsaga signature_help<CR>
+" nnoremap <silent> gh :Lspsaga lsp_finder<CR>
 " nnoremap <silent><space>e :Lspsaga show_line_diagnostics<CR>
 
 " Spectre for Find and Replace

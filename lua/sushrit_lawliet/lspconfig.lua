@@ -1,3 +1,27 @@
+-- ============================================ --
+--- Mason ---
+
+local servers = {
+		"bashls",
+		"cssls",
+		"dockerls",
+		"eslint",
+		"gopls",
+		"jsonls",
+		"tsserver",
+		"pyright",
+		"vimls",
+		"yamlls"
+
+}
+
+require("mason").setup()
+require("mason-lspconfig").setup({
+	ensure_installed = servers,
+	automatic_installation = true,
+})
+
+--- LSP Config ---
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap=true, silent=true }
@@ -7,7 +31,7 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 
 local nvim_lsp = require('lspconfig')
-local servers = { 'tsserver', 'pyright', 'gopls' }
+-- local servers = { 'tsserver', 'pyright', 'gopls' }
 
 local on_attach = function(client, bufnr)
   -- Enable completion triggered by <c-x><c-o>
@@ -38,3 +62,6 @@ for _, lsp in ipairs(servers) do
 		on_attach = on_attach
 	}
 end
+
+
+
