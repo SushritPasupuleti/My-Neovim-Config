@@ -131,6 +131,7 @@ Plug 'ziontee113/icon-picker.nvim' " Icon Picker
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'onsails/lspkind.nvim'
+Plug 'jose-elias-alvarez/null-ls.nvim'
 
 set encoding=UTF-8
 
