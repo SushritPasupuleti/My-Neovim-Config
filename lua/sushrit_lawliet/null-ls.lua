@@ -7,13 +7,13 @@ require("null-ls").setup({
 		}),
 		--Formatters End--
 		--Diagnotics Start--
-		require("null-ls").builtins.diagnostics.eslint,
+		-- require("null-ls").builtins.diagnostics.eslint,
 		--Diagnostics End--
 		----Completion Start----
 		require("null-ls").builtins.completion.spell,
 		----Completion End----
 		----Code Actions Start----
-		require("null-ls").builtins.code_actions.eslint,
+		-- require("null-ls").builtins.code_actions.eslint,
 		----Code Actions End----
 	},
 })
@@ -22,4 +22,4 @@ require("null-ls").setup({
 -- vim.cmd('map <Leader>lf :lua vim.lsp.buf.format()<CR>')
 
 -- For < v8
--- vim.cmd("map <Leader>lf :lua vim.lsp.buf.formatting()<CR>")
+vim.cmd("map <Leader>lf :lua vim.lsp.buf.formatting()<CR>")
