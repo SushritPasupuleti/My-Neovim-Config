@@ -1,5 +1,7 @@
 local M = {}
 
+vim.cmd [[colorscheme onedark]]
+
 -- Default options for the theme
 M.config = {
 	-- This enables the Neovim background to set either onedark or onelight
@@ -118,3 +120,4 @@ function M.set_config(user_config)
 end
 
 return M
+

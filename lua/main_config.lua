@@ -3,7 +3,6 @@ require("sushrit_lawliet.tree_sitter")
 require("sushrit_lawliet.browse_config")
 require("sushrit_lawliet.dashboard")
 require("sushrit_lawliet.snippets")
-require("sushrit_lawliet.colors")
 require("sushrit_lawliet.telescope")
 require("sushrit_lawliet.toggle-term")
 require("sushrit_lawliet.notify")
@@ -12,8 +11,14 @@ require("sushrit_lawliet.lspconfig")
 require("sushrit_lawliet.lspsaga")
 require("sushrit_lawliet.lspkind")
 require("sushrit_lawliet.null-ls")
+require("sushrit_lawliet.copilot")
 
 require("sushrit_lawliet.gitsigns")
+--One Dark Theme
+require("sushrit_lawliet.colors")
+--Catppuccin
+-- require("sushrit_lawliet.catppuccin")
+
 -- require 'sushrit_lawliet.nav-config'
 
 -- Start Dashboard
@@ -214,9 +219,6 @@ require("indent_blankline").setup({
 	show_current_context = true,
 	-- show_current_context_start = true,
 })
-
--- Copilot on Apple Silicon Depends on Node 17.x or lower, so install node 16 LTS and point to it here for Copilot use exclusively.
-vim.g.copilot_node_command = "/opt/homebrew/Cellar/node@16/16.16.0/bin/node"
 
 require("icon-picker").setup({ disable_legacy_commands = true })
 

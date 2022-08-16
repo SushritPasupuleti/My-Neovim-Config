@@ -133,6 +133,9 @@ Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'onsails/lspkind.nvim'
 Plug 'jose-elias-alvarez/null-ls.nvim'
 
+"====Catppuccin
+Plug 'catppuccin/nvim', {'as': 'catppuccin'}
+
 set encoding=UTF-8
 
 call plug#end()
@@ -151,15 +154,20 @@ syntax on
 au ColorScheme * hi Normal ctermbg=none guibg=none
 au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
 
-:colorscheme onedark
+" :colorscheme onedark
 
 " let g:airline_theme='onedark'
 let g:airline_theme='ayu_dark'"'deus'"'powerlineish'
+let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourself. default: 0
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline#extensions#whitespace#enabled = 0
 let g:airline_powerline_fonts = 1
+" let g:airline#extensions#tabline#left_sep = ''
+" let g:airline#extensions#tabline#left_alt_sep = '|'
+" let g:airline#extensions#tabline#right_sep = ''
+" let g:airline#extensions#tabline#right_alt_sep = '|'
 
 " LazyGit
 
