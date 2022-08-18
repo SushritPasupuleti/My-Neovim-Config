@@ -10,7 +10,7 @@ require("null-ls").setup({
 		-- require("null-ls").builtins.diagnostics.eslint,
 		--Diagnostics End--
 		----Completion Start----
-		require("null-ls").builtins.completion.spell,
+		-- require("null-ls").builtins.completion.spell,
 		----Completion End----
 		----Code Actions Start----
 		-- require("null-ls").builtins.code_actions.eslint,
