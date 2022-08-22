@@ -13,6 +13,8 @@ require("sushrit_lawliet.lspkind")
 require("sushrit_lawliet.null-ls")
 require("sushrit_lawliet.copilot")
 
+require("sushrit_lawliet.dap")
+
 require("sushrit_lawliet.gitsigns")
 --One Dark Theme
 require("sushrit_lawliet.colors")

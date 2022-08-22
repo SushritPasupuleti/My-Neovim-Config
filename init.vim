@@ -136,6 +136,10 @@ Plug 'jose-elias-alvarez/null-ls.nvim'
 "====Catppuccin
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 
+"===DAP===
+Plug 'mfussenegger/nvim-dap'
+Plug 'rcarriga/nvim-dap-ui'
+
 set encoding=UTF-8
 
 call plug#end()
