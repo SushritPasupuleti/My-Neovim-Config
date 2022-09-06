@@ -79,9 +79,10 @@ require("lualine").setup({
 	},
 	tabline = {
 		lualine_a = {
-			"buffers",
+			"branch",
 		},
 		lualine_b = {
+			"buffers",
 			-- {
 			-- 	"diff",
 			-- 	-- colored = true,

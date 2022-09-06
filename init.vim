@@ -146,6 +146,9 @@ Plug 'rcarriga/nvim-dap-ui'
 "===Motions
 Plug 'easymotion/vim-easymotion'
 
+"===Manage and view Keybindings
+Plug 'FeiyouG/command_center.nvim'
+
 set encoding=UTF-8
 
 call plug#end()
@@ -195,6 +198,7 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>fu <cmd>Telescope urlview theme=dropdown<cr>
+nnoremap <leader>fk <CMD>Telescope command_center<CR>
 
 " LSPSaga
 " nnoremap <leader>rn <cmd>Lspsaga rename<cr>

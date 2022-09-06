@@ -15,6 +15,7 @@ require("sushrit_lawliet.copilot")
 
 require("sushrit_lawliet.dap")
 require("sushrit_lawliet.statusline")
+require("sushrit_lawliet.command-center")
 
 require("sushrit_lawliet.gitsigns")
 --One Dark Theme
