@@ -149,6 +149,9 @@ Plug 'easymotion/vim-easymotion'
 "===Manage and view Keybindings
 Plug 'FeiyouG/command_center.nvim'
 
+"===Auto Relative Numbers
+Plug 'nkakouros-original/numbers.nvim'
+
 set encoding=UTF-8
 
 call plug#end()

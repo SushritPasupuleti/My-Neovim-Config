@@ -61,6 +61,14 @@ require("nvim-autopairs").setup({})
 -- 	}
 -- }
 
+-- Automatically toggle relative line numbers
+-- when relevant
+require('numbers').setup({
+		excluded_filetypes = {
+		'nerdtree'
+	}
+})
+
 require("scrollbar").setup({
 	show = true,
 	show_in_active_only = false,
