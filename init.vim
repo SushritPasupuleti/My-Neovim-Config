@@ -23,6 +23,9 @@
 
 :let mapleader = ","
 
+" Yank to System Clipboard
+set clipboard+=unnamedplus
+
 "call plug#begin()
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
@@ -152,6 +155,9 @@ Plug 'FeiyouG/command_center.nvim'
 "===Auto Relative Numbers
 Plug 'nkakouros-original/numbers.nvim'
 
+"===Time Tracking Needs other Setup(https://github.com/git-time-metric/gtm)
+Plug 'git-time-metric/gtm-vim-plugin'
+
 set encoding=UTF-8
 
 call plug#end()
@@ -192,6 +198,9 @@ let g:lazygit_floating_window_scaling_factor = 0.9 " scaling factor for floating
 " let g:lazygit_floating_window_corner_chars = ['╭', '╮', '╰', '╯'] " customize lazygit popup window corner characters
 let g:lazygit_floating_window_use_plenary = 0 " use plenary.nvim to manage floating window if available
 let g:lazygit_use_neovim_remote = 1 " fallback to 0 if neovim-remote is not installed
+
+" Time tracking (needs system-side setup (https://github.com/git-time-metric/gtm))
+let g:gtm_plugin_status_enabled = 1
 
 "telescope
 " Find files using Telescope command-line sugar.

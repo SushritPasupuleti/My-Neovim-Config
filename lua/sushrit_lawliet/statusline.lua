@@ -47,6 +47,7 @@ require("lualine").setup({
 				symbols = { added = "+", modified = "~", removed = "-" }, -- Changes the symbols used by the diff.
 				source = nil,
 			},
+			"gtmstatus",
 			{
 				"diagnostics",
 				sources = {
