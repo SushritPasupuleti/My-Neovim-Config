@@ -158,6 +158,11 @@ Plug 'nkakouros-original/numbers.nvim'
 "===Time Tracking Needs other Setup(https://github.com/git-time-metric/gtm)
 Plug 'git-time-metric/gtm-vim-plugin'
 
+Plug 'gaborvecsei/memento.nvim'
+
+" CHADTree
+Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
+
 set encoding=UTF-8
 
 call plug#end()
@@ -242,6 +247,10 @@ noremap <space>z :ZenMode<CR>
 nnoremap <silent> <leader>gg :LazyGit<CR>
 nnoremap <silent> <leader>gf :LazyGitFilter<CR>
 nnoremap <silent> <leader>gc :LazyGitFilterCurrentFile<CR>
+
+" Setup memento
+nnoremap <leader>hh <cmd>lua require('memento').toggle()<CR>
+nnoremap <leader>hc <cmd>lua require('memento').clear_history()<CR>
 
 " Load Lua Configs
 :lua require('main_config')

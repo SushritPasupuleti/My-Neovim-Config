@@ -43,6 +43,14 @@ require("zen-mode").setup({
 		width = 0.95, -- width will be 85% of the editor width
 	},
 })
+
+-- CHADTree config
+local chad_settings = {
+	["theme.text_color_set"] = "solarized_universal"
+}
+
+vim.api.nvim_set_var("chadtree_settings", local_chad_settings)
+
 -- require('neoscroll').setup()
 
 require("which-key").setup({
