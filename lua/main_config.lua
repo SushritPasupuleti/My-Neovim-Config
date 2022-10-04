@@ -16,6 +16,7 @@ require("sushrit_lawliet.copilot")
 require("sushrit_lawliet.dap")
 require("sushrit_lawliet.statusline")
 require("sushrit_lawliet.command-center")
+require("sushrit_lawliet.motions")
 
 require("sushrit_lawliet.gitsigns")
 --One Dark Theme
@@ -41,6 +42,7 @@ require("Comment").setup()
 require("zen-mode").setup({
 	window = {
 		width = 0.95, -- width will be 85% of the editor width
+		backdrop = 0
 	},
 })
 
@@ -67,8 +69,8 @@ require("nvim-autopairs").setup({})
 -- 			"node_modules"
 -- 		}
 -- 	}
--- }
 
+-- }
 -- Automatically toggle relative line numbers
 -- when relevant
 require('numbers').setup({
