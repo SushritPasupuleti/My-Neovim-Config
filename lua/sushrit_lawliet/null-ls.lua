@@ -19,7 +19,7 @@ require("null-ls").setup({
 })
 
 -- For v8
--- vim.cmd('map <Leader>lf :lua vim.lsp.buf.format()<CR>')
+vim.cmd('map <Leader>lf :lua vim.lsp.buf.format()<CR>')
 
 -- For < v8
-vim.cmd("map <Leader>lf :lua vim.lsp.buf.formatting()<CR>")
+-- vim.cmd("map <Leader>lf :lua vim.lsp.buf.formatting()<CR>")

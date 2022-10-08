@@ -24,7 +24,7 @@
 :let mapleader = ","
 
 " Yank to System Clipboard
-set clipboard+=unnamedplus
+" set clipboard+=unnamedplus
 
 "call plug#begin()
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')

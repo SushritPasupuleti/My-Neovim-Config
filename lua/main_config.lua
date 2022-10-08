@@ -42,13 +42,13 @@ require("Comment").setup()
 require("zen-mode").setup({
 	window = {
 		width = 0.95, -- width will be 85% of the editor width
-		backdrop = 0
+		backdrop = 0,
 	},
 })
 
 -- CHADTree config
 local chad_settings = {
-	["theme.text_color_set"] = "solarized_universal"
+	["theme.text_color_set"] = "solarized_universal",
 }
 
 vim.api.nvim_set_var("chadtree_settings", local_chad_settings)
@@ -73,10 +73,10 @@ require("nvim-autopairs").setup({})
 -- }
 -- Automatically toggle relative line numbers
 -- when relevant
-require('numbers').setup({
-		excluded_filetypes = {
-		'nerdtree'
-	}
+require("numbers").setup({
+	excluded_filetypes = {
+		"nerdtree",
+	},
 })
 
 require("scrollbar").setup({
