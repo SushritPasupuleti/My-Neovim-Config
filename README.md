@@ -1,5 +1,7 @@
 # My neovim config
 
+**Note**: Archiving this, the latest version can be found [here](https://github.com/SushritPasupuleti/dots)
+
 ## Snippets
 
 Go to [Snippets File](Snippets.md)
